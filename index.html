@@ -363,7 +363,7 @@ function renderStand(force){
       h='<h1 tabindex="-1">Os brindes acabaram!</h1><p class="lead">Obrigada por passar no estande da Virada no Café. A roleta está encerrada.</p>'+aboutBlock();
     }else{
       const msg={setup:"A roleta está em preparação. Fale com a equipe do estande.",paused:"A roleta está pausada. Fale com a equipe do estande.",reserved:"Os brindes que restam já estão reservados para quem está na fila. Tente de novo em alguns minutos."}[ds.block];
-      h='<h1 tabindex="-1">Roleta de Desafios da Virada</h1>'+
+      h='<h1 tabindex="-1">Gire os desafios da Virada</h1>'+
         '<p class="lead">Gire a roleta, responda a uma missão rápida no nosso estande e ganhe o brinde indicado na tela. Cada pessoa participa uma vez, enquanto durarem os brindes.</p>'+
         '<div class="wheel-wrap'+(ds.block?' dim':'')+'">'+POINTER+'<div class="wheel-rot" id="rot" style="transform:rotate('+S.rot+'deg)">'+wheelSVG(ds.st)+'</div><div class="hub"><img src="'+IMG.cup+'" alt=""></div></div>'+
         (msg?'<p class="notice" role="status">'+msg+'</p>':'')+
